@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background-image: url("https://i.ibb.co/Fxx71TN/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.signUp{
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    opacity: .9;
+    padding: 28px;
+    border-radius: 30px;
+    margin: 6% auto;
+}
+
+h1{
+    padding: 0 0 5px;
+    font-size: 36px;
+    color: #2f1583;
+    text-align: center;
+}
+
+p{
+    padding: 5px 0 5px;
+    color: #2f1583;
+    text-align: center;
+}
+
+.main-user-info{
+    padding: 20px 0;
+}
+
+.user-input-box{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #2f1583;
+    background: #d8dcfc;
+    outline: none;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2f1583;
+    color: #ffffff;
+}
+
+.form-submit-btn input:hover{
+    cursor: pointer;
+    background: #15cdcb;
+    color: #ffffff;
+}

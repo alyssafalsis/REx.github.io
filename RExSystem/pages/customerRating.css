@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.rating-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.wrapper {
+    background: rgba(168, 229, 230, 0.85);
+    padding: 2rem;
+    max-width: 576px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    text-align: center;
+}
+.wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    font-family: Montserrat;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: #2f1583;
+    margin-bottom: 1rem;
+}
+.rating .star {
+    cursor: pointer;
+}
+.rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.rating .star:hover {
+    transform: scale(1.1);
+    color: #2f1583;
+}
+textarea {
+    width: 100%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+}
+.btn-group {
+    display: flex;
+    justify-content: center;
+    grid-gap: .5rem;
+    /*align-items: center;*/
+
+}
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-group .btn.submit {
+    background: #2f1583;
+    color: #fff;
+}
+.btn-group .btn.submit:hover {
+    background: #15cdcb;
+    color: white;
+}
+.btn-group .btn.cancel {
+    background: #ffffff;
+    color: #000000;
+}
+.btn-group .btn.cancel:hover {
+    background: grey;
+}

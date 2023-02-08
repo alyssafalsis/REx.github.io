@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.rating-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.wrapper {
+    background: rgba(168, 229, 230, 0.85);
+    padding: 2rem;
+    max-width: 60%;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    opacity: 80%;
+}
+.wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    font-family: Montserrat;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: #2f1583;
+    /*margin-bottom: 1rem;*/
+}
+
+.circle {
+    background: #ffffff;
+    width: 210px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
+    /*margin-bottom: 10px;*/
+    margin: auto;
+}
+
+.circle p {
+    margin-top: 40%;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.btn-group {
+    grid-gap: .5rem;
+    position: absolute;
+    right: 0px;
+}
+
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.btn-group .btn.submit {
+    background: #2f1583;
+    color: #fff;
+}
+.btn-group .btn.submit:hover {
+    background: #15cdcb;
+    color: white;
+}
+.btn-group .btn.cancel {
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+.btn-group .btn.cancel:hover {
+    background: grey;
+    text-decoration: none;
+}
