@@ -15,12 +15,20 @@
     margin-top: 5rem;
 }
 
+.account-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    margin-top: 10rem;
+}
+
 .wrapper {
     background: rgb(168, 229, 230);
     padding: 1rem;
     width: 50%;
     border-radius: 1rem;
-    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     display: flex;
     justify-content: center;
 }

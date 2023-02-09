@@ -35,7 +35,7 @@
 <div class="logInAdmin">
     <h1 class="form-title">Pharmacy Log In</h1>
     <p>Input necessary details.</p>
-    <form action="pharmacyAccountOverview.php">
+    <form action="pharmacyProfileOverview.php">
         <div class="main-user-info">
             <div class="user-input-box">
                 <input type="text" id="userName" placeholder="Username">

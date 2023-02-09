@@ -21,8 +21,14 @@
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="pharmacyAccountOverview.php">
+                <a href="pharmacyProfileOverview.php">
                     <span class="fa fa-user-circle-o"></span>
+                    <span>Profile Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="pharmacyAccountOverview.php">
+                    <span class="fa fa-address-card-o"></span>
                     <span>Account Overview</span>
                 </a>
             </li>

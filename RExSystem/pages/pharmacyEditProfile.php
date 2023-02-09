@@ -38,8 +38,8 @@
                 <input type="text" class="form-control" id="subscription" placeholder="Active" disabled>
             </div>
             <div class="btn-group button">
-                <button type="button" onclick="location.href='pharmacyAccountOverview.php'" style="cursor: pointer" class="btn submit">Submit</button>
-                <button type="button" onclick="location.href='pharmacyAccountOverview.php'" style="cursor: pointer"class="btn cancel">Cancel</button>
+                <button type="button" onclick="location.href='pharmacyProfileOverview.php'" style="cursor: pointer" class="btn submit">Submit</button>
+                <button type="button" onclick="location.href='pharmacyProfileOverview.php'" style="cursor: pointer"class="btn cancel">Cancel</button>
             </div>
         </form>
     </div>
