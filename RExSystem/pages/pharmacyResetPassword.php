@@ -5,8 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pharmacy Account Overview</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Pharmacy Reset Password</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="pharmacyPanel.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,14 +14,20 @@
 <input type="checkbox" id="nav-toggle">
 <div class="sidebar">
     <div class="sidebar-brand">
-        <h2><span class="fas fa-clinic-medical"></span><span>Pharmacy 1</span></h2>
+        <h2><span class="fa fa-certificate"></span><span>Pharmacy1</span></h2>
     </div>
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="pharmacyAccountOverview.php" class="active">
+                <a href="pharmacyAccountOverview.php">
                     <span class="fa fa-user-circle-o"></span>
-                    <span>Account Overview</span>
+                    <span>Pharmacy Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="pharmacyProductRatingFeedback.php" class="active">
+                    <span class="fa fa-star-half-empty"></span>
+                    <span>Pharmacy Account</span>
                 </a>
             </li>
             <li>
@@ -58,8 +63,8 @@
         <h2>
             <label for="nav-toggle">
                 <span class="fa fa-reorder"></span>
-                Menu
             </label>
+            Dashboard
         </h2>
         <div class="user-wrapper">
             <img src="https://i.ibb.co/kqPp6dz/photo-10-2023-01-30-10-33-02.jpg" width="30px" height="30px" alt="">
@@ -67,7 +72,6 @@
                 <h4>John Doe</h4>
                 <small>Super admin</small>
             </div>
-            <a href="pharmacyLogIn.php"><span class="fa fa-sign-out"></span></a>
         </div>
     </header>
 
@@ -79,12 +83,12 @@
                     <div class="card-header">
                         <h2>Profile</h2>
                         <button type="button" onclick="location.href='pharmacyEditProfile.php'" style="cursor: pointer">
-                            EDIT PROFILE
+                            Edit Profile
                         </button>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="ao-tbl">
+                            <table>
                                 <thead>
                                 <tr>
                                     <td>Pharmacy</td>

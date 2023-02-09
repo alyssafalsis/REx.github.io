@@ -5,12 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Rating</title>
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="customerRating.css" />
+    <title>Profile</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="accountManagement.css"/>
 </head>
 <body>
 <header>
@@ -49,26 +47,37 @@
         <div></div>
     </label>
 </header>
-<div class="rating-form">
-    <div class="wrapper">
-        <h3>Rating and Feedback Form</h3>
-        <form action="#">
-            <div class="rating">
-                <input type="number" name="rating" hidden>
-                <i class='bx bx-star star' style="--i: 0;"></i>
-                <i class='bx bx-star star' style="--i: 1;"></i>
-                <i class='bx bx-star star' style="--i: 2;"></i>
-                <i class='bx bx-star star' style="--i: 3;"></i>
-                <i class='bx bx-star star' style="--i: 4;"></i>
+<div class="editAccount">
+    <h1 class="form-title">Account Details</h1>
+    <form action="accountManagement.php">
+        <div class="main-user-info">
+            <div class="user-input-view">
+                <label for="userName">Username:</label>
+                <input type="text" id="userName" placeholder="Username123" disabled>
             </div>
-            <textarea name="opinion" cols="30" rows="5" placeholder="Write your comment here..."></textarea>
-            <div class="btn-group">
-                <button type="submit" class="btn submit">Submit</button>
-                <button class="btn cancel">Cancel</button>
+            <div class="user-input-view">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="FirstName LastName" disabled>
             </div>
-        </form>
-    </div>
+            <div class="user-input-view">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="email123@example.com" disabled>
+            </div>
+            <div class="user-input-view">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="text" id="mobileNumber" placeholder="09123456789" disabled>
+            </div>
+            <div class="user-input-view">
+                <label for="mobileNumber">Gender:</label>
+                <input type="text" id="mobileNumber" placeholder="Male/Female/Others" disabled>
+            </div>
+            <div class="form-submit-btn btn-group">
+                <button type="submit" class="edit">Edit Details</button>
+            </div>
+        </div>
+
 </div>
-<script src="customerRating.js"></script>
+</form>
+</div>
 </body>
 </html>

@@ -13,11 +13,13 @@ body{
 .editAccount{
     width: 95%;
     max-width: 650px;
+    height: auto;
     background: #ffffff;
-    opacity: .9;
+    opacity: 1;
     padding: 28px;
     border-radius: 30px;
-    margin: 6% auto;
+    margin: 3% auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 h1{
@@ -40,11 +42,15 @@ p{
     padding: 20px 0;
 }
 
+.main-user-info span{
+    font-weight: bold;
+}
+
 .user-input-box:nth-child(2n){
     justify-content: end;
 }
 
-.user-input-box{
+.user-input-box, .user-input-view{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -55,7 +61,15 @@ p{
     width: 95%;
     color: #2f1583;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.user-input-view label{
+    width: 95%;
+    color: #2f1583;
+    font-size: 20px;
+    font-weight: bold;
     margin: 5px 0;
 }
 
@@ -67,7 +81,24 @@ p{
     border-bottom: 2px solid #2f1583;
     background: #d8dcfc;
     outline: none;
+    padding-left: 10px;
+    font-size: 16px;
 }
+
+.user-input-view input{
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    background: #D8DCFCFF;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/*.user-input-view input::placeholder{*/
+/*    color: white;*/
+/*}*/
 
 .gender-title{
     width: 95%;
@@ -83,26 +114,37 @@ p{
 }
 
 .gender-category label{
-    padding: 0 20px 0 5px;
+    padding: 0 10px 0 5px;
 }
 
-.form-submit-btn input{
-    display: block;
-    width: 60%;
-    margin: 10px auto 2px;
-    font-size: 20px;
+.form-submit-btn{
+    display: inline;
+}
+
+.form-submit-btn button{
+    width: 8rem;
+    margin: 40px 3px 0px;
+    font-size: 16px;
     padding: 10px;
     border: none;
     border-radius: 5px;
     background: #2f1583;
     color: #ffffff;
+    float: right;
 }
 
-.form-submit-btn input:hover{
+.form-submit-btn button:hover{
     cursor: pointer;
     background: #15cdcb;
     color: #ffffff;
 }
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 @media(max-width: 600px){
     .container{

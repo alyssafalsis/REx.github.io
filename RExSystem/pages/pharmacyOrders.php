@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pharmacy Account Overview</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="pharmacyPanel.css"/>
     <link rel="stylesheet" href="details.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +16,7 @@
 <input type="checkbox" id="nav-toggle">
 <div class="sidebar">
     <div class="sidebar-brand">
-        <h2><span class="fa fa-certificate"></span><span>RExpress</span></h2>
+        <h2><span class="fas fa-clinic-medical"></span><span>Pharmacy 1</span></h2>
     </div>
     <div class="sidebar-menu">
         <ul>
@@ -38,7 +39,7 @@
                 </a>
             </li>
             <li>
-                <a href="pharmacyViewProducts.php" >
+                <a href="pharmacyInventory.php" >
                     <span class="fa fa-archive"></span>
                     <span>Inventory</span>
                 </a>
@@ -59,7 +60,7 @@
             <label for="nav-toggle">
                 <span class="fa fa-reorder"></span>
             </label>
-            Dashboard
+            Menu
         </h2>
         <div class="user-wrapper">
             <img src="https://i.ibb.co/kqPp6dz/photo-10-2023-01-30-10-33-02.jpg" width="30px" height="30px" alt="">
@@ -67,6 +68,7 @@
                 <h4>John Doe</h4>
                 <small>Super admin</small>
             </div>
+            <a href="pharmacyLogIn.php"><span class="fa fa-sign-out"></span></a>
         </div>
     </header>
     <main>
@@ -74,6 +76,12 @@
         <div class="recent-grid">
             <div class="projects">
                 <div class="card">
+                    <div class="card-header">
+                        <div class="table-search">
+                            <span class="fa fa-search"></span>
+                            <input type="search" placeholder="Search"/>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table>

@@ -1,11 +1,12 @@
 <?php
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pharmacy Subscription List</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="adminPanel.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +20,7 @@
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="adminPharmacySubscription.php">
+                <a href="adminPharmacySubscription.php" class="active">
                     <span class="fa fa-calendar-check-o"></span>
                     <span>Subscriptions</span>
                 </a>
@@ -31,7 +32,7 @@
                 </a>
             </li>
             <li>
-                <a href="adminCustomerList.php" class="active">
+                <a href="adminCustomerList.php">
                     <span class="fa fa-users"></span>
                     <span>Customers</span>
                 </a>
@@ -65,7 +66,7 @@
     </header>
 
     <main>
-        <h1>Customer List</h1>
+        <h1>Pharmacy Subscribtions</h1>
         <div class="recent-grid">
             <div class="projects">
                 <div class="card">
@@ -81,52 +82,47 @@
                             <table>
                                 <thead>
                                 <tr>
-                                    <td>Customer ID</td>
-                                    <td>Username</td>
-                                    <td>Name</td>
-                                    <td>Email</td>
-                                    <td>Mobile Number</td>
-                                    <td>Gender</td>
-                                    <td>Delete</td>
+                                    <td>Subscription ID</td>
+                                    <td>Pharmacy</td>
+                                    <td>Start Date</td>
+                                    <td>End Date</td>
+                                    <td>Status</td>
+                                    <td>Action</td>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>123123</td>
-                                    <td>Aly</td>
-                                    <td>Alyssa Falsis</td>
-                                    <td>alyssafalsis@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>F</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>Pharmacy1</td>
+                                    <td>01-02-2022</td>
+                                    <td>01-03-2022</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button>End Subscription</button>
+                                        <button>Renew Subscription</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123123</td>
-                                    <td>Zoey</td>
-                                    <td>Zoilo Poblete</td>
-                                    <td>zp@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>123456</td>
+                                    <td>Pharmacy2</td>
+                                    <td>01-05-2022</td>
+                                    <td>01-06-2022</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button>End Subscription</button>
+                                        <button>Renew Subscription</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>123123</td>
-                                    <td>Machu</td>
-                                    <td>Matthew Layon</td>
-                                    <td>ml@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
-                                </tr>
-
-                                <tr>
-                                    <td>123123</td>
-                                    <td>Len</td>
-                                    <td>Allen Sauco</td>
-                                    <td>as@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>135790</td>
+                                    <td>Pharmacy3</td>
+                                    <td>01-07-2022</td>
+                                    <td>01-08-2022</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button>End Subscription</button>
+                                        <button>Renew Subscription</button>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>

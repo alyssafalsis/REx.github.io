@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<div class="rating-form">
+<div class="crud-form">
     <div class="wrapper">
         <div class="circle">
             <p>+</p>
@@ -20,21 +20,19 @@
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="productID">Product ID</label>
+                    <label for="productID">Product ID:</label>
+                    <input type="text" class="form-control" id="ProductID">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="brandName">Brand Name:</label>
                     <input type="text" class="form-control" id="ProductID">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="brandName">Brand Name</label>
-                    <input type="text" class="form-control" id="ProductID">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="genericName">Generic Name</label>
+                    <label for="genericName">Generic Name:</label>
                     <input type="text" class="form-control" id="ItemName">
                 </div>
-            </div>
-            <div class="form-row">
                 <div class="form-group col-md-6">
                     <label class="mr-sm-2" for="drugType">Drug Type:</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -43,40 +41,28 @@
                         <option value="2">Prescribed</option>
                     </select>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="price">Price</label>
-                    <input type="text" class="form-control" id="ItemName" placeholder="PHP">
-                </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label class="mr-sm-2" for="stockType">Stock Type:</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Per piece</option>
-                        <option value="2">Per box</option>
-                    </select>
+                    <label for="price">Price:</label>
+                    <input type="text" class="form-control" id="price" placeholder="PHP">
                 </div>
                 <div class="form-group col-md-6">
-                    <label class="mr-sm-2" for="stock">Stock:</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Per piece</option>
-                        <option value="2">Per box</option>
-                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" class="form-control" id="quantity">
                 </div>
+            </div>
+            <div class="form-row">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="Price">Description</label>
+                    <label for="Price">Description:</label>
                     <input type="text" class="form-control" id="inputPassword4">
                 </div>
             </div>
             <div class="btn-group button">
-                <button type="submit" class="btn submit">Submit</button>
-
-                    <button class="btn cancel"><a href="pharmacyViewProducts.php">Cancel</a></button>
-
+                <button type="button" onclick="location.href='pharmacyInventory.php'" style="cursor: pointer" class="btn submit">Submit</button>
+                <button type="button" onclick="location.href='pharmacyInventory.php'" style="cursor: pointer"class="btn cancel">Cancel</button>
             </div>
         </form>
     </div>

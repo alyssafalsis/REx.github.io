@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer List</title>
+    <title>Pharmacy List</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="adminPanel.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,19 +19,19 @@
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="adminPharmacySubscription.php">
+                <a href="adminPharmacySubscription.php" >
                     <span class="fa fa-calendar-check-o"></span>
                     <span>Subscriptions</span>
                 </a>
             </li>
             <li>
-                <a href="adminPharmacyAccounts.php">
+                <a href="adminPharmacyAccounts.php" class="active">
                     <span class="fa fa-user-plus"></span>
                     <span>Pharmacies</span>
                 </a>
             </li>
             <li>
-                <a href="adminCustomerList.php" class="active">
+                <a href="adminCustomerList.php">
                     <span class="fa fa-users"></span>
                     <span>Customers</span>
                 </a>
@@ -65,7 +65,7 @@
     </header>
 
     <main>
-        <h1>Customer List</h1>
+        <h1>Pharmacy Accounts</h1>
         <div class="recent-grid">
             <div class="projects">
                 <div class="card">
@@ -74,6 +74,9 @@
                             <span class="fa fa-search"></span>
                             <input type="search" placeholder="Search"/>
                         </div>
+                        <button type="button" onclick="location.href='adminAddPharmacy.php'">
+                            ADD ACCOUNT
+                        </button>
                     </div>
 
                     <div class="card-body">
@@ -81,52 +84,45 @@
                             <table>
                                 <thead>
                                 <tr>
-                                    <td>Customer ID</td>
+                                    <td>Subscription ID</td>
+                                    <td>Pharmacy Name</td>
                                     <td>Username</td>
-                                    <td>Name</td>
-                                    <td>Email</td>
+                                    <td>Password</td>
                                     <td>Mobile Number</td>
-                                    <td>Gender</td>
-                                    <td>Delete</td>
+                                    <td>Email</td>
+                                    <td>Action</td>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>123123</td>
-                                    <td>Aly</td>
-                                    <td>Alyssa Falsis</td>
-                                    <td>alyssafalsis@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>F</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>#123456</td>
+                                    <td>Pharmacy 1</td>
+                                    <td>PharmacyAdmin0001</td>
+                                    <td>@REx123456</td>
+                                    <td>09171234567</td>
+                                    <td>loremipsum@gmail.com</td>
+                                    <td><a href="#"><i class="fa fa-edit" style="font-size:24px"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td>123123</td>
-                                    <td>Zoey</td>
-                                    <td>Zoilo Poblete</td>
-                                    <td>zp@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>#123456</td>
+                                    <td>Pharmacy 1</td>
+                                    <td>PharmacyAdmin0001</td>
+                                    <td>@REx123456</td>
+                                    <td>09171234567</td>
+                                    <td>loremipsum@gmail.com</td>
+                                    <td><a href="#"><i class="fa fa-edit" style="font-size:24px"></a></i>
+                                        <a href="#"><i class="fa fa-trash-o" style="font-size:24px"></a></i></td>
                                 </tr>
                                 <tr>
-                                    <td>123123</td>
-                                    <td>Machu</td>
-                                    <td>Matthew Layon</td>
-                                    <td>ml@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
-                                </tr>
-
-                                <tr>
-                                    <td>123123</td>
-                                    <td>Len</td>
-                                    <td>Allen Sauco</td>
-                                    <td>as@gmail.com</td>
-                                    <td>091932692896</td>
-                                    <td>M</td>
-                                    <td><a href="#"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+                                    <td>#123456</td>
+                                    <td>Pharmacy 1</td>
+                                    <td>PharmacyAdmin0001</td>
+                                    <td>@REx123456</td>
+                                    <td>09171234567</td>
+                                    <td>loremipsum@gmail.com</td>
+                                    <td><a href="#"><i class="fa fa-edit" style="font-size:24px"></a></i>
+                                        <a href="#"><i class="fa fa-trash-o" style="font-size:24px"></a></i></td>
                                 </tr>
                                 </tbody>
                             </table>

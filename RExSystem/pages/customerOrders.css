@@ -26,7 +26,7 @@
 }
 
 .status {
-    /*border-radius: .5rem;*/
+    border-radius: 50px;
     text-align: center;
 
 }
@@ -51,3 +51,4 @@
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
 }
+

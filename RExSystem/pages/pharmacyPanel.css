@@ -159,6 +159,18 @@ header label span{
     color: gray;
 }
 
+.user-wrapper span {
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.user-wrapper a:visited {
+    color: #15cdcb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 main {
     margin-top: 85px;
     padding: 2rem 1.5rem;
@@ -214,6 +226,36 @@ main {
     border-radius: 5px;
 }
 
+.card-body{
+    text-align: center;
+}
+
+.fa fa-info-circle{
+    text-align: center;
+}
+
+.card-body .ao-tbl td{
+    text-align: left;
+}
+
+.card-body a:visited{
+    color: rgba(47, 21, 131, 0.83);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card-body a:hover{
+    color: #15cdcb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card-body a:link {
+    color: rgba(47, 21, 131, 0.83);
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .card-header,
 .card-body{
     padding: 1rem;
@@ -227,12 +269,39 @@ main {
 }
 
 .card-header button{
-    background: #60dcdc;
+    background: rgba(47, 21, 131, 0.83);
     border-radius: 10px;
     color: white;
     font-size: .8rem;
     padding: .5rem 1rem;
-    border: 1px solid #60dcdc;
+    border: none;
+}
+
+.card-header button:hover{
+    background:  #60dcdc;
+    color: white;
+}
+
+.table-search {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.table-search span {
+    display: inline-block;
+    padding: 0rem .5rem;
+    font-size: 1rem;
+}
+
+.table-search input {
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
 }
 
 table {
@@ -253,24 +322,21 @@ td {
     padding: .5rem 1rem;
     font-size: .9rem;
     color: #222;
+    text-align: center;
 }
 
 td button{
-    background: #60dcdc;
+    background: rgba(47, 21, 131, 0.83);
     border-radius: 10px;
     color: white;
     font-size: .8rem;
     padding: .5rem 1rem;
-    border: 1px solid #60dcdc;
+    border: none;
 }
 
 td button:hover{
-    background:  #2f1583;
-    border-radius: 10px;
+    background:  #60dcdc;
     color: white;
-    font-size: .8rem;
-    padding: .5rem 1rem;
-    border: 1px solid #60dcdc;
 }
 
 td .status {
@@ -279,6 +345,7 @@ td .status {
     width: 20px;
     border-radius: 50%;
     margin-right: 1rem;
+    text-align: center;
 }
 
 tr td:last-child {
@@ -355,6 +422,7 @@ tr td:last-child {
 /*    display: inline;*/
 /*}*/
 /*}*/
+
 
 @media only screen and (max-width: 960px){
     .cards {

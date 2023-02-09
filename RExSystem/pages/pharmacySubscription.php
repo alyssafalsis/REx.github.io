@@ -16,7 +16,7 @@
 <input type="checkbox" id="nav-toggle">
 <div class="sidebar">
     <div class="sidebar-brand">
-        <h2><span class="fa fa-certificate"></span><span>RExpress</span></h2>
+        <h2><span class="fas fa-clinic-medical"></span><span>Pharmacy 1</span></h2>
     </div>
     <div class="sidebar-menu">
         <ul>
@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="pharmacyViewProducts.php">
+                <a href="pharmacyInventory.php">
                     <span class="fa fa-archive"></span>
                     <span>Inventory</span>
                 </a>
@@ -65,7 +65,7 @@
             <label for="nav-toggle">
                 <span class="fa fa-reorder"></span>
             </label>
-            Dashboard
+            Menu
         </h2>
         <div class="user-wrapper">
             <img src="https://i.ibb.co/kqPp6dz/photo-10-2023-01-30-10-33-02.jpg" width="30px" height="30px" alt="">
@@ -73,6 +73,7 @@
                 <h4>John Doe</h4>
                 <small>Super admin</small>
             </div>
+            <a href="pharmacyLogIn.php"><span class="fa fa-sign-out"></span></a>
         </div>
     </header>
 
@@ -93,7 +94,7 @@
                             <table class="content-table">
                                 <thead>
                                 <tr>
-                                    <td>Subscription ID</td>
+                                    <td>Subscription No.</td>
                                     <td>Valid Until</td>
                                     <td>Status</td>
                                     <td>Details</td>
@@ -104,19 +105,19 @@
                                     <td>#000000</td>
                                     <td>0-00-0000</td>
                                     <td>Active</td>
-                                    <td><a href="#" onclick="togglePopup()" ><i class='fas fa-receipt' style='font-size:24px'></i></a></td>
+                                    <td><a href="#" onclick="togglePopup()"><i class='fa fa-info-circle' style='font-size:24px'></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>#000000</td>
                                     <td>0-00-0000</td>
                                     <td>Expired</td>
-                                    <td><a href="#" onclick="togglePopup()"><i  class='fas fa-receipt' style='font-size:24px'></i></a></td>
+                                    <td><a href="#" onclick="togglePopup()"><i  class='fa fa-info-circle' style='font-size:24px'></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>#000000</td>
                                     <td>0-00-0000</td>
                                     <td>Expired</td>
-                                    <td><a href="#" onclick="togglePopup()" ><i class='fas fa-receipt' style='font-size:24px'></i></a></td>
+                                    <td><a href="#" onclick="togglePopup()" ><i class='fa fa-info-circle' style='font-size:24px'></i></a></td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    box-sizing: border-box;
 }
 
 .container{
-    margin: 70px 100px;
+    margin: 45px 100px;
 }
 
 .row{
@@ -13,7 +14,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 10px;
 }
 
 .card-01{
@@ -22,10 +22,11 @@
     flex: 2;
     max-width: 200px;
     height: auto;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 25px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .row h3{
@@ -37,20 +38,40 @@
 .card-01 h5{
     letter-spacing: 2px;
     font-weight:bold;
-    margin: 30px 10px 10px;
+    margin-top: 10px;
 }
 
 .card-02{
-    background-color: #e8fcfc;
+    background-color: #d4fcfc;
     position: relative;
     flex: 1;
     max-width: 100px;
     height: 400px;
     margin: 10px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 25px;
 }
+
+form {
+    margin: 20px 0 10px 30px;
+}
+
+.col input, .form-group select{
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #d8dcfc;
+    border-bottom: 2px solid #2f1583;
+    outline: none;
+    font-size: 16px;
+    margin:  0 0 10px 0 ;
+    /*background: #d8dcfc;*/
+    color: #222222;
+}
+
+
 
 @media (max-width:768px){
     .card-01{
@@ -76,4 +97,27 @@
     height: auto;
     margin: 10px;
     padding: 25px;
+}
+
+.checkoutButton{
+    padding: .5rem 3rem;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: rgba(47, 21, 131, 0.78);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.checkoutButton:hover{
+    background: #15cdcb;
+    color: #fff;
+}
+
+.container .cart-back{
+    text-decoration: none;
 }

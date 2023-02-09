@@ -11,21 +11,38 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 </head>
 <body>
 <header>
     <div class="logo">
-        <a href="index.php"><img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt=""></a>
+        <a href="indexLogIn.php"><img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt=""></a>
     </div>
     <input type="checkbox" id="nav_check" hidden>
     <nav>
         <div class="logo">
             <img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt="">
         </div>
-        <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="">CONTACT US</a></li>
-        </ul>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="indexLogIn.php">HOME</a></li>
+                <li><a href="shop.php">SHOP</a></li>
+                <li><a href="#">MENU <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="cart.php">CART</a></li>
+                            <li><a href="accountView.php">PROFILE</a></li>
+                            <li><a href="customerOrders.php">ORDERS</a></li>
+                            <li><a href="index.php">LOGOUT</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--            <li><a href="index.php">LOGOUT</a></li>-->
+                <!--            <li><a href="#"><span class='fa fa-user-circle-o'></span></a></li>-->
+                <!--            <li><a href="cart.php"><span class='fas fa-shopping-cart'></span></a></li>-->
+                <!--            <li><a href="index.php"><span class='fa fa-sign-out'></span></a></li>-->
+            </ul>
+        </div>
     </nav>
     <label for="nav_check" class="hamburger">
         <div></div>
@@ -89,7 +106,7 @@
             <div class="summary">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <h6>Items Total</h6>
+                        <h6>Item1</h6>
                     </div>
                     <div class="col-3 col-md-3">
                         <h6>PHP500</h6>
@@ -97,10 +114,10 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <h6>Shipping Fee</h6>
+                        <h6>Item2</h6>
                     </div>
                     <div class="col-3 col-md-3">
-                        <h6>PHP45</h6>
+                        <h6>PHP500</h6>
                     </div>
                 </div>
             </div>
@@ -112,9 +129,10 @@
                 <div class="col-3 col-md-3">PHP545
                 </div>
             </div>
-        </div
+            <a class="cartButton" href="checkout.php">CHECKOUT</a>
+        </div>
     </div>
-    <h5><a href="shop.php"><i class="fa fa-long-arrow-left"></i> Back to Shopping</a></h5>
+    <h5><a href="shop.php" class="cart-back"><i class="fa fa-arrow-left"></i> Back to Shop</a></h5>
 </div>
 
 </body>

@@ -1,15 +1,15 @@
 <?php
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Rating</title>
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="customerRating.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QR Payment</title>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="qrPage.css"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 </head>
 <body>
@@ -25,12 +25,13 @@
         <div class="menu-bar">
             <ul>
                 <li><a href="indexLogIn.php">HOME</a></li>
+                <li><a href="#">CONTACT US</a></li>
                 <li><a href="shop.php">SHOP</a></li>
                 <li><a href="#">MENU <i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a href="cart.php">CART</a></li>
-                            <li><a href="accountView.php">PROFILE</a></li>
+                            <li><a href="#">PROFILE</a></li>
                             <li><a href="customerOrders.php">ORDERS</a></li>
                             <li><a href="index.php">LOGOUT</a></li>
                         </ul>
@@ -49,26 +50,22 @@
         <div></div>
     </label>
 </header>
-<div class="rating-form">
-    <div class="wrapper">
-        <h3>Rating and Feedback Form</h3>
-        <form action="#">
-            <div class="rating">
-                <input type="number" name="rating" hidden>
-                <i class='bx bx-star star' style="--i: 0;"></i>
-                <i class='bx bx-star star' style="--i: 1;"></i>
-                <i class='bx bx-star star' style="--i: 2;"></i>
-                <i class='bx bx-star star' style="--i: 3;"></i>
-                <i class='bx bx-star star' style="--i: 4;"></i>
+<section class="hero">
+        <div class="row">
+            <div class="column">
+                <img src="https://i.ibb.co/DPFVPTy/paymaya-qr-dummy.jpg" width="100%">
             </div>
-            <textarea name="opinion" cols="30" rows="5" placeholder="Write your comment here..."></textarea>
-            <div class="btn-group">
-                <button type="submit" class="btn submit">Submit</button>
-                <button class="btn cancel">Cancel</button>
+            <div class="column">
+                <img src="https://i.ibb.co/nRbhRfD/gcash-qr.jpg" width="100%">
             </div>
-        </form>
-    </div>
-</div>
-<script src="customerRating.js"></script>
+        </div>
+    <form class="ref-num" action="orderConfirmation.php">
+        <p>Input Reference Number: </p>
+        <input type="text" id="paymentReferenceNumber" placeholder="Reference No.">
+        <div class="form-submit-btn">
+            <input type="submit" name="logIn" value="SUBMIT">
+        </div>
+    </form>
+</section>
 </body>
 </html>

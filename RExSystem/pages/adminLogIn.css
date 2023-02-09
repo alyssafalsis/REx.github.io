@@ -11,14 +11,14 @@ body{
 
 }
 
-.signUp{
+.adminLogIn{
     width: 100%;
     max-width: 450px;
     background: #ffffff;
     opacity: 1;
     padding: 28px;
     border-radius: 30px;
-    margin: 2% auto;
+    margin: 6% auto;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
@@ -33,6 +33,10 @@ p{
     padding: 5px 0 5px;
     color: #2f1583;
     text-align: center;
+}
+
+.forgotPassword{
+    text-align: right;
 }
 
 .main-user-info{

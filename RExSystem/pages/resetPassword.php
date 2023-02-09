@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>REx Reset Password</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="navbar.css"/>
-    <link rel="stylesheet" href="logIn.css"/>
+    <link rel="stylesheet" href="resetPassword.css"/>
 </head>
 <body>
 <header>
@@ -22,7 +22,7 @@
         </div>
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="pharmacyLogIn.php">LOG IN AS PHARMACY</a></li>
+            <li><a href="logIn.php">LOG IN</a></li>
         </ul>
     </nav>
     <label for="nav_check" class="hamburger">
@@ -31,23 +31,20 @@
         <div></div>
     </label>
 </header>
-<div class="logIn">
-    <h1 class="form-title">Log In</h1>
+<div class="resetPassword">
+    <h1 class="form-title">Reset Password</h1>
     <p>Input necessary details.</p>
-    <form action="indexLogIn.php">
+    <form action="#">
         <div class="main-user-info">
             <div class="user-input-box">
-                <input type="text" id="userName" placeholder="Username">
+                <input type="password" id="newPassword" placeholder="New Password">
             </div>
             <div class="user-input-box">
-                <input type="password" id="password" placeholder="Password">
-                <p class="forgotPassword"><a href="verifyEmail.php">Forgot Password?</a></p>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
             </div>
             <div class="form-submit-btn">
-                <input type="submit" name="logIn" value="Log In" onclick="">
+                <input type="submit" name="signUp" value="Reset Password">
             </div>
-            <br>
-            <p><a href="signUp.php">Don't have an Account? Sign Up instead.</a></p>
         </div>
     </form>
 </div>

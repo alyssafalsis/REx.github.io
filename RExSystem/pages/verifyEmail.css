@@ -15,15 +15,16 @@ body{
     width: 100%;
     max-width: 450px;
     background: #ffffff;
-    opacity: .9;
+    opacity: 1;
     padding: 28px;
     border-radius: 30px;
-    margin: 10% auto;
+    margin: 7% auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-h1{
+h2{
     padding: 0 0 5px;
-    font-size: 36px;
+    font-size: 30px;
     color: #2f1583;
     text-align: center;
 }
@@ -52,6 +53,8 @@ p{
     border-bottom: 2px solid #2f1583;
     background: #d8dcfc;
     outline: none;
+    padding-left: 10px;
+    font-size: 16px;
 }
 
 .form-submit-btn input{

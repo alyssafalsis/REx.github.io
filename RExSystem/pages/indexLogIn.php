@@ -7,28 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REx Homepage</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="navbar.css"/>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--    <link rel="shortcut icon" type="image/jpg" href="https://i.ibb.co/z4GxffJ/photo-2-2023-01-30-10-33-02.jpg"/>-->
+    <link rel="stylesheet" href="indexLogIn.css"/>
 </head>
 <body>
 <header>
     <div class="logo">
-        <a href="index.php"><img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt=""></a>
+        <a href="indexLogIn.php"><img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt=""></a>
     </div>
     <input type="checkbox" id="nav_check" hidden>
     <nav>
         <div class="logo">
             <img class="logo-img" src="https://i.ibb.co/pWx0ZBM/Rex-2.png" alt="">
         </div>
-        <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#pharmacies">PHARMACIES</a></li>
-            <li><a href="#footer">CONTACT US</a></li>
-            <li><a href="logIn.php">LOG IN</a></li>
-        </ul>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="indexLogIn.php">HOME</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="shop.php">SHOP</a></li>
+                <li><a href="#">MENU <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="cart.php">CART</a></li>
+                            <li><a href="accountView.php">PROFILE</a></li>
+                            <li><a href="customerOrders.php">ORDERS</a></li>
+                            <li><a href="index.php">LOGOUT</a></li>
+                        </ul>
+                    </div>
+                </li>
+    <!--            <li><a href="index.php">LOGOUT</a></li>-->
+    <!--            <li><a href="#"><span class='fa fa-user-circle-o'></span></a></li>-->
+    <!--            <li><a href="cart.php"><span class='fas fa-shopping-cart'></span></a></li>-->
+    <!--            <li><a href="index.php"><span class='fa fa-sign-out'></span></a></li>-->
+            </ul>
+        </div>
     </nav>
     <label for="nav_check" class="hamburger">
         <div></div>
@@ -48,7 +62,7 @@
         </div>
     </div>
 </section>
-<section class="about" id="about">
+<section class="about">
     <div class="about-container">
         <div class="about-content">
             <h1>About Us</h1>
@@ -61,7 +75,7 @@
         </div>
     </div>
 </section>
-<section class="pharmacies" id="pharmacies">
+<section class="pharmacies">
     <h1>Pharmacies</h1>
     <div class="pharmacies-container">
         <div class="pharmacies-col">

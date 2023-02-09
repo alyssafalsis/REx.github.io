@@ -5,7 +5,7 @@
 }
 
 .container{
-    margin: 70px 100px;
+    margin: 40px 100px;
 }
 
 .row{
@@ -23,8 +23,8 @@
     max-width: 200px;
     height: auto;
     margin: 10px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 25px;
 }
 
@@ -41,15 +41,35 @@
 }
 
 .card-02{
-    background-color: #e8fcfc;
+    background-color: #d4fcfc;
     position: relative;
     flex: 1;
     max-width: 100px;
     height: 400px;
     margin: 10px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 30px rgba(0,0,0,.3);
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 25px;
+}
+
+.cartButton{
+    padding: .5rem 3rem;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: rgba(47, 21, 131, 0.78);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cartButton:hover{
+    background: #15cdcb;
+    color: #fff;
 }
 
 @media (max-width:768px){
@@ -92,3 +112,8 @@ td img{
     color: red;
     font-size: 12px;
 }
+
+.container .cart-back{
+    text-decoration: none;
+}
+

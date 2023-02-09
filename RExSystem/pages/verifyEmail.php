@@ -22,7 +22,7 @@
         </div>
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="">CONTACT US</a></li>
+            <li><a href="logIn.php">LOG IN</a></li>
         </ul>
     </nav>
     <label for="nav_check" class="hamburger">
@@ -32,7 +32,7 @@
     </label>
 </header>
 <div class="verifyEmail">
-    <h1 class="form-title">Enter Email to Reset Password</h1>
+    <h2 class="form-title">Reset Password</h2>
     <p>Enter the email address associated with your account and we'll send you a link to reset your password.</p>
     <form action="#">
         <div class="main-user-info">

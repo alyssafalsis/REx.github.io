@@ -96,6 +96,7 @@ header {
     background: #fff;
     display: flex;
     justify-content: space-between;
+    height: 5.25rem;
     padding: 1rem;
     box-shadow: 2px 2px 10px rgba(0, 0 ,0, 0.2);
     position: fixed;
@@ -143,6 +144,7 @@ header label span{
 }
 
 .user-wrapper {
+    padding-top: 10px;
     display: flex;
     align-item: center;
 }
@@ -155,6 +157,18 @@ header label span{
 .user-wrapper small{
     display: inline-block;
     color: gray;
+}
+
+.user-wrapper span {
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.user-wrapper a:visited {
+    color: #15cdcb;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 main {
@@ -181,6 +195,24 @@ main {
     border-radius: 5px;
 }
 
+.card-body a:visited{
+    color: #15cdcb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card-body a:hover{
+    color: rgba(47, 21, 131, 0.83);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card-body a:link {
+    color: rgba(47, 21, 131, 0.83);
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .card-header,
 .card-body{
     padding: 1rem;
@@ -194,12 +226,17 @@ main {
 }
 
 .card-header button{
-    background: #2f1583;
+    background-color: #15cdcb;
     border-radius: 10px;
     color: white;
     font-size: .8rem;
     padding: .5rem 1rem;
-    border: 1px solid #2f1583;
+    border: none;
+}
+
+.card-header button:hover{
+    background-color: rgba(47, 21, 131, 0.83);
+    color: white;
 }
 
 table {
@@ -224,81 +261,26 @@ td {
 }
 
 td button{
-    background: #60dcdc;
+    background-color: #15cdcb;
     border-radius: 10px;
     color: white;
     font-size: .8rem;
     padding: .5rem 1rem;
-    border: 1px solid #60dcdc;
+    border: none;
 }
 
 td button:hover{
-    background:  #2f1583;
-    border-radius: 10px;
+    background-color: rgba(47, 21, 131, 0.83);
     color: white;
-    font-size: .8rem;
-    padding: .5rem 1rem;
-    border: 1px solid #60dcdc;
+}
+
+td a{
+    display: inline-block;
 }
 
 .table-responsive {
     width: 100%;
 }
-
-
-/*@media only screen and (max-width: 1200px) {*/
-/*    .sidebar {*/
-/*        width: 70px;*/
-/*    }*/
-
-/*    .sidebar .sidebar-brand,*/
-/*    .sidebar li {*/
-/*        padding-left: 1rem;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .sidebar li a{*/
-/*        padding-left: 0rem;*/
-/*    }*/
-
-/*    .sidebar li a span{*/
-/*        padding-right: 1rem;*/
-/*    }*/
-
-/*    .sidebar .sidebar-brand h2 span:last-child,*/
-/*    .sidebar li a span:last-child{*/
-/*        display: none;*/
-/*    }*/
-
-/*    .main-content {*/
-/*        margin-left: 70px;*/
-/*    }*/
-
-/*    .main-content header{*/
-/*        width: calc(100% - 70px);*/
-/*        left: 70px;*/
-/*    }*/
-
-/*.sidebar:hover {*/
-/*    width: 290px;*/
-/*    z-index: 200;*/
-/*}*/
-
-/*.sidebar:hover .sidebar-brand,*/
-/*.sidebar:hover li {*/
-/*    padding-left: 2rem;*/
-/*    text-align: left;*/
-/*}*/
-
-/*.sidebar:hover li a span{*/
-/*    padding-right: 1rem;*/
-/*}*/
-
-/*.sidebar:hover .sidebar-brand h2 span:last-child,*/
-/*.sidebar li a span:last-child{*/
-/*    display: inline;*/
-/*}*/
-/*}*/
 
 @media only screen and (max-width: 960px){
     .cards {

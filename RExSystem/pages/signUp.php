@@ -22,7 +22,7 @@
         </div>
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="">CONTACT US</a></li>
+            <li><a href="logIn.php">LOG IN</a></li>
         </ul>
     </nav>
     <label for="nav_check" class="hamburger">
